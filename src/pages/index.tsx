@@ -1,3 +1,5 @@
+import style from "./index.module.css";
+
 export default function Home() {
-  return <>초기 세팅</>;
+  return <h1 className={style.h1}>메인내용이 들어감</h1>;
 }
