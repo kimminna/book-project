@@ -73,7 +73,7 @@ export default function Page({
           className={style.cover_img_container}
           style={{ backgroundImage: `url('${coverImgUrl}')` }}
         >
-          <Image alt={title} src={coverImgUrl} />
+          <Image alt={title} src={coverImgUrl} width={250} height={500} />
         </div>
         <div className={style.title}>{title}</div>
         <div className={style.subTitle}>{subTitle}</div>
