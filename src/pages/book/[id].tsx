@@ -3,6 +3,7 @@ import style from "./[id].module.css";
 import fetchOneBook from "@/lib/fetch-one-book";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Image from "next/image";
 
 export const getStaticPaths = () => {
   return {
@@ -72,7 +73,7 @@ export default function Page({
           className={style.cover_img_container}
           style={{ backgroundImage: `url('${coverImgUrl}')` }}
         >
-          <img src={coverImgUrl} />
+          <Image alt={title} src={coverImgUrl} />
         </div>
         <div className={style.title}>{title}</div>
         <div className={style.subTitle}>{subTitle}</div>
